@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+</head>
+
+<body>
+    <header class="fade-in">
+        <div class="nav-wrapper">
+            <h3 class="logo">Hoàng Anh</h3>
+            <nav class="nav">
+                <a href="#">Giới thiệu</a>
+                <a href="#">Kĩ năng</a>
+                <a href="#">Dự án</a>
+            </nav>
+    </header>
+    <main>
+        <section id="about" class="fade-in">
+            <div class="container">
+                <img src="/img/Facebook.png" alt="Ảnh đại diện" width="150">
+                <div class="title">
+                    <h4>Xin chào, mình là</h4>
+                    <h4>Hoàng Anh!</h4>
+                    <p>Học tại trường Đại học Công Nghệ Thông Tin & Truyền Thông Thái Nguyên</p>
+                </div>
+            </div>
+        </section>
+        <section class="fade-in">
+            <div class="skill-container">
+                <h3>SKILLS</h3>
+                <div class="skill">
+                    <h4>✔ HTML ✔ CSS ✔ JavaScript </h4>
+                    <h4>✔ Python ✔ SQL ✔ MongoDB</h4>
+                    <h4>✔ React ✔ Java ✔ C++</h4>
+                    <h4>✔ Node.js ✔ C ✔ .NET</h4>
+                    <h4></h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="fade-in">
+
+            <div class="project-container">
+                <h3>PROJECT</h3>
+                <div class="project">
+                    <div class="project-one">
+                        <h4>Web Bán Hàng</h4>
+                        <p>Project 1: Tạo trang web bán hàng</p>
+                    </div>
+                    <div class="project-two">
+                        <h4>Web Bán Hàng</h4>
+                        <p>Project 2: Tạo trang web nghe nhạc</p>
+                    </div>
+                    <div class="project-three">
+                        <h4>Web Mạng Xã Hội</h4>
+                        <p>Project 3: Tạo trang web mạng xã hội</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fade-in">
+            <div class="contact">
+                <h3>CONTACT</h3>
+                <div class="contact-info">
+                    <div class="row"><span>✉️</span><span>Email: hoang45682@gmail.com</span></div>
+                    <div class="row"><span>📱</span><span>SĐT: 0867116863</span></div>
+                    <div class="row">
+                        <span>🌐</span>
+                        <span><a href="https://www.facebook.com/hoang.anh.20112005" target="_blank">
+                                Facebook cá nhân</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="fade-in">
+        <div class="footer">
+            <span>
+                <p>&copy; - 2025 Thiết kế bởi Hoàng Anh</p>
+            </span>
+            <div class="social-icons">
+                <a href="https://facebook.com/hoang.anh.20112005" target="_blank">
+                    <img src="./img/2023_Facebook_icon.svg.png" alt="Facebook" width="24">
+                </a>
+                <a href="mailto:hoang45682@gmail.com">
+                    <img src="./img/Email_Shiny_Icon.svg.png" alt="Email" width="24">
+                </a>
+                <a href="https://soundcloud.com/2hmteam_1090" target="_blank">
+                    <img src="./img/145809.png" alt="soundcloud" width="24">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const elements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        elements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>
